@@ -9,10 +9,14 @@
     $sentencia = $bd->prepare("INSERT INTO
     juegos (nombre, descripcion)
     values (?, ?)");
-    $sentencia->bind_param("ss", $nombre, $des);
-    if($sentencia->execute())
-        echo "Data registered";
-    else
-        echo "Data NOT registered";
 
-    Header("Location: form.php");
+    # Pasar datos a sentencia
+    $sentencia->bind_param("ss", $nombre, $des);
+
+    # Comprobar si se registraron los datos
+    if($sentencia->execute())
+        echo "<script> alert('Data registered') </script>";
+    else
+        echo "<script> alert('Data NOT registered') </script>";
+
+    //Header("Location: form.php");
