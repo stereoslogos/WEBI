@@ -15,7 +15,7 @@
     values (?, ?, ?)");
 
     # Pasar datos a sentencia
-    $sentencia->bind_param("ss", $nombre, $des, $img);
+    $sentencia->bind_param("sss", $nombre, $des, $ruta);
 
     # Comprobar si se registraron los datos
     if($sentencia->execute())

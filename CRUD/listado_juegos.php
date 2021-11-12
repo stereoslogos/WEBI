@@ -22,6 +22,7 @@
       <th scope="col">ID #</th>
       <th scope="col">Nombre</th>
       <th scope="col">Sinopsis</th>
+      <th scope="col">Imagen</th>
       <th scope="col">Editar</th>
       <th scope="col">Eliminar</th>
     </tr>
@@ -33,8 +34,8 @@
       <td> <?php echo $registro["nombre"]; ?> </td>
       <td> <?php echo $registro["descripcion"]; ?> </td>
       <td> <img src="<?php echo $registro["imagen"]; ?>" width="100px" alt="cover"> </td>
-      <td>Editar</td>
-      <td>Eliminar</td>
+      <td> <a href="editar.php?id=<?php echo $registro["id"]; ?>" class="btn btn-warning">Editar</a> </td>
+      <td> <a href="eliminar.php?id=<?php echo $registro["id"]; ?>" class="btn btn-danger">Eliminar</a> </td>
     </tr>
 
     <?php
