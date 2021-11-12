@@ -13,6 +13,10 @@
                 <textarea name="descripcion" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class="form-group">
+                <label for="exampleFormControlTextarea1">Imagen del juego</label>
+                <input name="imagen" type="file" class="form-control">
+            </div>
+            <div class="form-group">
                 <button type="submit" class="btn btn-success">Guardar</button>
             </div>
         </form>

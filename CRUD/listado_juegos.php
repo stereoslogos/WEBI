@@ -7,6 +7,7 @@
 
     # convertir los resultados en un array
     $registros = $sentencia->fetch_all(MYSQLI_ASSOC);
+    
 ?>
 
 <?php
@@ -26,24 +27,19 @@
     </tr>
   </thead>
   <tbody>
+    <?php foreach($registros as $registro){ ?>
     <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <th> <?php echo $registro["id"]; ?> </th>
+      <td> <?php echo $registro["nombre"]; ?> </td>
+      <td> <?php echo $registro["descripcion"]; ?> </td>
+      <td> <img src="<?php echo $registro["imagen"]; ?>" width="100px" alt="cover"> </td>
+      <td>Editar</td>
+      <td>Eliminar</td>
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+
+    <?php
+    }
+    ?>
   </tbody>
 </table>
 </body>
