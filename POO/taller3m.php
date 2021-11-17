@@ -7,6 +7,7 @@
         <title>Taller 3</title>
     </head>
     <body>
+        <h3>5. Una persona desea cambiar pesos a dólares, a euros y viceversa. Diseñe un sistema orientado a objetos que permita realizar las conversiones entre las monedas, implemente método constructor.</h3>
         <form>
             <label for="curr">Convertir de:</label>
 

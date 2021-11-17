@@ -7,6 +7,7 @@
         <title>Taller 3</title>
     </head>
     <body>
+        <h3>4. Defina una clase para almacenar una temperatura dada en grados centígrados y la convierta a grados Farenheit o Kelvin. Cree los métodos correspondientes e implemente el uso de constructores con parámetros.</h3>
         <form>
             <label for="temp">Temperatura °C:</label>
             <input type="float" name="temp" id="temp" placeholder="38.5">

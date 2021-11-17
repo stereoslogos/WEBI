@@ -1,3 +1,28 @@
+<style>
+    body{
+        margin: auto;
+        background-color: black;
+        color: white;
+        font-family: monospace;
+        font-size: 15px;
+        width: 90%;
+    }
+</style>
+<h1>Taller #3 PHP</h1>
+        <h2>Los siguientes ejercicios (1-3) deben ser ejecutados ingresando valores directamente en el código.</h2>
+        <hr>
+        <h3>1. Cree una clase denominada Círculo con las siguientes características:</h3>
+        <p>
+            Atributos: 
+            Radio (número decimal)</p>
+        <p>
+            Métodos: 
+            Calcular el área. 
+            Calcular el perímetro. 
+            Método para modificar valor del Radio.
+            Método para consultar el valor del Radio.
+        </p>
+
 <?php
     class Circulo{
         public $radio = 35.8;
@@ -34,7 +59,20 @@
     $cir->modificar();
     echo "<br>";
     $cir->showR();
+?>
+        <hr>
+        <h3>2. Cree una clase llamada Rectángulo con las siguientes características:</h3>
+        <p>
+            Atributos: 
+            Largo o Ancho
+        </p>
+        <p>
+            Métodos: 
+            Calcular el área o Calcular el perímetro.
+            Métodos necesarios asignar y consultar los valores del largo y ancho (individuales)
+        </p>
 
+<?php
     class Rectangulo{
         public $base=12;
         public $altura=18;
@@ -59,15 +97,34 @@
 
         
     }
-    echo "<hr><strong>Rectangulo</strong><br>";
+    echo "<strong>Rectangulo</strong><br>";
     $rec = new Rectangulo(12,18);
     $rec->showA();
     echo "<br>";
     $rec->showB();
     echo "<br>";
     $rec->R_Area(12,18);
-    echo "<hr>";
+?>
+        <hr>
+        <h3>3. Cree una clase para gestionar los artículos de un supermercado con las siguientes especificaciones:</h3>
+        <p>
+            Atributos: 
+            Clave numérica.
+            Descripción.
+            Precio.
+            Cantidad en existencia.
 
+        </p>
+        <p>
+            Métodos: 
+            Constructor con parámetros. 
+            Método para modificar los valores de los atributos y que reciba los 4 parámetros.
+            Una propiedad para modificar cada atributo. 
+            Una propiedad para consultar cada atributo.
+
+        </p>
+
+<?php
     class Super{
         public $clave,$desc,$precio,$cant;
 
@@ -148,3 +205,4 @@
     $sup->mod_ca(7);
     echo "<br>Cantidad: ";
     $sup->show_ca();
+?>

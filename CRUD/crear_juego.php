@@ -7,7 +7,7 @@
     $img = $_POST['imagen'];
 
     # Ruta imgs
-    $ruta = "http://localhost/ochophp/crud/img/$img";
+    $ruta = "http://localhost/ochophp/CRUD/img/$img";
 
     # Sentencia SQL
     $sentencia = $bd->prepare("INSERT INTO

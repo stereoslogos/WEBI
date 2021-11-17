@@ -7,7 +7,7 @@
     echo $des = $_POST['descripcion'];
     echo $img = $_POST['imagen'];
     # Ruta imgs
-    $ruta = "http://localhost/ochophp/crud/img/$img";
+    $ruta = "http://localhost/ochophp/CRUD/img/$img";
 
     # Sentencia para guardar cambios
     $sentencia =$bd->prepare("UPDATE juegos SET nombre = ?, descripcion = ?, imagen = ? WHERE id = ?");
