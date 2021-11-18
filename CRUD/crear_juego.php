@@ -23,4 +23,5 @@
     else
         echo "<script> alert('Data NOT registered') </script>";
 
-    //Header("Location: form.php");
+    
+    header("Location: listado_juegos.php");

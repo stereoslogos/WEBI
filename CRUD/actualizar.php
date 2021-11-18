@@ -16,4 +16,3 @@
     $sentencia->bind_param("sssi", $nombre, $des, $ruta, $id);
     $sentencia->execute();
     header("Location: listado_juegos.php");
-    
