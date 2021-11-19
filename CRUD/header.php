@@ -13,5 +13,4 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row justify-content-center">
+    <div class="container-fluid justify-content-center" >
